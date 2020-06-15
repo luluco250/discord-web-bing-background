@@ -9,13 +9,13 @@ window.addEventListener("load", () => {
 
 	function myLog(...args) {
 		console.log(
-			"[MESSG] Bing Wallpaper Changer:\n",
+			"[MESSG] Discord Bing Background:\n",
 			args.reduce((prev, curr) => `${prev} ${curr}`));
 	}
 
 	function myError(...args) {
 		console.error(
-			"[ERROR] Bing Wallpaper Changer:\n",
+			"[ERROR] Discord Bing Background:\n",
 			args.reduce((prev, curr) => `${prev} ${curr}`));
 	}
 
