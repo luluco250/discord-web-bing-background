@@ -1,0 +1,27 @@
+@-moz-document url-prefix("https://discord.com/channels/") {
+
+:root {
+	--background-primary: transparent;
+	--background-secondary: transparent;
+	--background-secondary-alt: transparent;
+	--background-tertiary: transparent;
+}
+
+body {
+	font-family: Segoe UI;
+	background: black;
+}
+
+#my-background {
+	--blur-size: 15px;
+	--out-margin: calc(var(--blur-size) * 1);
+	position: absolute;
+	top: calc(var(--out-margin) * -1);
+	left: calc(var(--out-margin) * -1);
+	width: calc(100vw + var(--out-margin) * 2);
+	height: calc(100vh + var(--out-margin) * 2);
+	object-fit: cover;
+	filter: blur(var(--blur-size)) brightness(0.7);
+}
+
+}
